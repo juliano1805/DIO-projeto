@@ -1,0 +1,43 @@
+Link para download do Git:https://git-scm.com/downloads
+O Git Bash é um terminal extendido para otimizar o uso do Git.
+ COMANDOS PARA O TERMINAL:
+-git init, ele cria um repositório vazio ou transforma uma pasta que você já tem e que não está com controle de versão em um repositório.
+
+-git clone, é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo).
+
+-git branch, pode ser usado para três finalidades diferentes: criar, listar e excluir ramificações.
+
+-git checkout,  principal objetivo do git checkout é ajudar você a mudar de uma branch para outra ou então verificar arquivos e commits.
+
+-git status, o comando Git status serve para fornecer algumas informações importantes sobre a branch em que você estiver no momento, incluindo 
+se ela está atualizada em relação à master e quais arquivos foram alterados.
+
+-git diff, Caso você queira, por exemplo, saber exatamente o que você alterou (e não apenas quais arquivos foram alterados), o melhor a se fazer é utilizar este
+comando.
+
+-git add, quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo commit 
+(a menos que alteremos as configurações).
+Para incluir as alterações de um arquivo em nosso próximo commit, será preciso usar o comando git add.
+   Para adicionar apenas um arquivo:
+
+git add <arquivo>
+
+   Para adicionar, de uma vez, todos os arquivos modificados:
+
+git add -A
+
+-git commit, esse comando visa definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário.
+
+git commit -m "mensagem explicando a mudança no código"
+
+-git push, após confirmar as alterações, a próxima coisa que você deseja fazer é enviar as alterações para o servidor remoto usando o comando git push:
+
+git push <remote> <nome-do-branch>
+
+-git pull, O git pull é usado para obter atualizações do repositório remoto. 
+
+Trata-se de um comando que depende do referencial de onde ele foi feito, ou seja, um git pull feito da sua máquina vai puxar informações do repositório original para ela. Mas um git pull feito a partir do repositório original vai puxar as informações da sua máquina. Percebe?
+
+Este comando é uma combinação de git fetch (baixa as alterações do repositório remoto, mas não as mescla com o seu) e git merge (que mescla tudo junto).
+
+Isso significa que, quando usamos o git pull, ele recebe as atualizações do repositório remoto (git fetch) e aplica imediatamente as alterações mais recentes no seu local (git merge).
